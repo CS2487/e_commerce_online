@@ -1,0 +1,21 @@
+class ApiKeyProvider {
+  static const String _envName = 'AIzaSyBtUFoRCzN4Cc-XjQZTMrl_a7BZrzOzFQY';
+
+  static const String _apiKey =
+      String.fromEnvironment(_envName, defaultValue: '');
+
+  static String getApiKey({bool throwIfMissingInDebug = true}) {
+    if (_apiKey.isEmpty) {
+      assert(() {
+        if (throwIfMissingInDebug) {
+          throw Exception(
+            'GEMINI_API_KEY not set. Build with: --dart-define=GEMINI_API_KEY=YOUR_KEY',
+          );
+        }
+        return true;
+      }());
+      return '';
+    }
+    return _apiKey;
+  }
+}

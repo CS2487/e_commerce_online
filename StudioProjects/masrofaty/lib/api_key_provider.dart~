@@ -1,0 +1,29 @@
+// lib/services/api_key_provider.dart
+
+import 'package_obfuscation/package_obfuscation.dart';
+
+/// فئة مسؤولة عن توفير مفتاح API بأمان.
+/// تستخدم متغيرات البيئة (dart-define) وتقنية إخفاء السلاسل النصية.
+class ApiKeyProvider {
+  // استخدمنا const لجعل المفتاح يُهيأ وقت التجميع (compile-time).
+  // القيمة الافتراضية فارغة للأمان.
+  @obfuscated
+  static const String _apiKey = String.fromEnvironment(
+    'GEMINI_API_KEY',
+    defaultValue: '',
+  );
+
+  /// دالة آمنة لجلب المفتاح.
+  /// تقوم بالتحقق من أن المفتاح ليس فارغًا قبل إرجاعه.
+  static String getApiKey() {
+    if (_apiKey.isEmpty) {
+      // هذا الخطأ سيظهر للمطور فقط في وضع التصحيح (Debug Mode).
+      // في وضع الإنتاج (Release Mode)، لن يتم عرض هذا الخطأ للمستخدم.
+      throw Exception(
+        'GEMINI_API_KEY is not set! '
+            'Build your app with: --dart-define=GEMINI_API_KEY=YOUR_KEY',
+      );
+    }
+    return _apiKey;
+  }
+}
