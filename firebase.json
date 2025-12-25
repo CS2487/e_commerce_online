@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"flutter":{"platforms":{"android":{"default":{"projectId":"e-commerce-online-3929a","appId":"1:701648263286:android:d2e3edac701d5389a12757","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"e-commerce-online-3929a","configurations":{"android":"1:701648263286:android:d2e3edac701d5389a12757"}}}}}}
+=======
+{"flutter":{"platforms":{"android":{"default":{"projectId":"ecommerce-86217","appId":"1:7269093136:android:4198fa29133153420cdf95","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"ecommerce-86217","configurations":{"android":"1:7269093136:android:4198fa29133153420cdf95"}}}}}}
+>>>>>>> 5a042bb7c6a19462eb4471495630e8e171b14e7f
