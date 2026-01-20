@@ -6,19 +6,49 @@ A full-featured mobile e-commerce application built with **Flutter**. This proje
 
 ## 📸 Screenshots
 
-### Home Page
-![Home Page Screen](https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/home.jpg)
+تستعرض هذه الصور الواجهات الرئيسية للتطبيق:
+
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/splash.jpg" width="200px" /><br/>
+      <b>Splash Screen</b>
+    </td>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/login.jpg" width="200px" /><br/>
+      <b>Login</b>
+    </td>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/signup.jpg" width="200px" /><br/>
+      <b>Sign Up</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/forget%20password.jpg" width="200px" /><br/>
+      <b>Forgot Password</b>
+    </td>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/home.jpg" width="200px" /><br/>
+      <b>Home Page</b>
+    </td>
+    <td align="center" style="width: 33.33%; padding: 10px;">
+      <img src="https://raw.githubusercontent.com/CS2487/e_commerce_online/main/assets/screen%20shoot/details.jpg" width="200px" /><br/>
+      <b>Product Details</b>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🚀 Features
 
-* **User Authentication:** Secure Sign Up and Login powered by **Firebase**.
-* **Product Catalog:** Browse a wide range of products with detailed views.
-* **Shopping Cart:** Add, remove, and manage product quantities in real-time.
-* **Payment Integration:** Ready for secure checkout processes.
-* **REST API Integration:** Dynamic data fetching for products and categories.
-* **Responsive UI:** Clean and modern design optimized for all mobile screen sizes.
+* **User Authentication:** Secure Sign Up, Login, and Forgot Password powered by **Firebase**.
+* **Product Catalog:** Browse products with a modern Home Page layout.
+* **Product Details:** Detailed view of each product with dynamic data.
+* **Shopping Cart:** Real-time cart management.
+* **REST API Integration:** Fetching dynamic content for products and categories.
+* **Modern UI:** Built using Flutter for a high-performance cross-platform experience.
 
 ---
 
@@ -31,8 +61,8 @@ A full-featured mobile e-commerce application built with **Flutter**. This proje
 </div>
 
 * **Frontend:** [Flutter](https://flutter.dev/) (Dart)
-* **Backend Services:** [Firebase](https://firebase.google.com/) (Auth & Database)
-* **Data Handling:** REST API Integration
+* **Backend Services:** [Firebase](https://firebase.google.com/) (Auth & Storage)
+* **API:** REST API Integration
 
 ---
 
@@ -60,7 +90,7 @@ Before you begin, ensure you have the following installed:
 
 3.  **Firebase Setup:**
     * Create a project on [Firebase Console](https://console.firebase.google.com/).
-    * Add your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS) to the respective directories.
+    * Add your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS).
 
 4.  **Run the Application:**
     ```bash
